@@ -1,0 +1,8 @@
+name = input('请输入名字')
+age = int(input('请输入年龄'))
+dizhi = input('请输入地址')
+dianhua = int(input('请输入手机号'))
+print(name)
+print(age)
+print(dizhi)
+print(dianhua)
