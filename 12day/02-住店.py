@@ -3,8 +3,8 @@ print("欢迎来到房山宾馆".center(30,'*'))
 list = []
 all_money = 0
 while True:
-    print("1、欢迎住店")
-    print("2、欢迎下次光临")
+    print("1、住店")
+    print("2、离店")
     print("3、统计")
     print("4、退出")
     num = int(input('请选择功能'))
@@ -36,12 +36,12 @@ while True:
             print('欢迎老板进入使用')
             num = int(input('请选择功能'))
             count = 0
-            if num == 1:
+            if num == 3:
                 print('今天住店人数%d'%len(list))
                 for i in list:
                     if i['zd'] == False:
                         count+=1
-                print('今天离店%d'%count)
+                print('今天离店人数%d'%count)
                 print('今天收益%.02f'%all_money)
     elif num == 4:
         print('退出系统')

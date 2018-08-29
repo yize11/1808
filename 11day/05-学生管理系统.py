@@ -38,6 +38,11 @@ while True:
                     xjb['name'] = name
                 elif num == 2:
                     age =int(input('请输入新的年龄:'))
+                    if age < 1 or age > 120:
+                        print('重新输入')
+                        continue
+                    else:
+                        break
                     xjb['age'] = age
                 elif num == 3:
                     sex = input('请输入新的性别:')
@@ -77,32 +82,3 @@ while True:
     elif num == 5:
         print('欢迎下次使用'.center(30,'-'))
         break
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
